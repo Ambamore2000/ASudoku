@@ -1,6 +1,7 @@
 package me.andrewjkim.asudoku;
 
 import me.andrewjkim.asudoku.menus.MainMenu;
+import me.andrewjkim.asudoku.menus.MainMenua;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -26,22 +27,10 @@ import java.io.IOException;
 
 public class ASudoku {
 
-    public static JFrame menuFrame;
-
-    public static void main(String[] args) throws IOException {
-
-        initializeMenuFrame();
+    public static void main(String[] args) {
 
         MainMenu mainMenu = new MainMenu();
-    }
 
-    private static void initializeMenuFrame() throws IOException {
-        menuFrame = new JFrame("ASudoku");
-
-        menuFrame.setIconImage(ImageIO.read(new File("src\\main\\resources\\icon.png")));
-
-        menuFrame.getContentPane().setBackground(Color.WHITE);
-        menuFrame.setSize(400, 600);
     }
 
 }
