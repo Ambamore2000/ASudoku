@@ -1,5 +1,7 @@
 package me.andrewjkim.asudoku.menus;
 
+import me.andrewjkim.asudoku.utils.GameManager;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -24,6 +26,9 @@ public class MainMenu extends JFrame {
             e.printStackTrace();
         }
         super.setVisible(true);
+
+        //TODO delete
+        initializeGameMenu();
     }
 
     private void initializeMainMenu() {
@@ -31,6 +36,6 @@ public class MainMenu extends JFrame {
     }
 
     private void initializeGameMenu() {
-
+        GameManager gameManager = new GameManager();
     }
 }
